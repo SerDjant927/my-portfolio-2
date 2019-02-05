@@ -1,0 +1,326 @@
+.body{
+   background:#383838;
+   font-family: 'SF UI Display';
+   font-style: italic;
+   color: #333333;
+   font-size: 20px;
+   font-weight:bold;
+   text-align: center;
+   font-style: normal;
+   background-color: #D8D8D8;
+   
+ }
+.header {
+   border-width: 0px;
+   padding: 1px;
+   text-align: right;
+   border-color: #1D7373;
+   font-family: serif;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 20px;
+   border-style: solid;
+   background-color: #D8D8D8;
+   position: relative;
+   background: url('../img/background__header.jpg');
+   background-repeat:repeat;
+   height: 500px;
+
+ }
+.title{
+  margin: 0 auto;
+  position: relative;
+  width:800px;
+  
+
+ }
+.title_h1{
+  font-family: 'SF UI Display';
+  text-align: center;
+  font-size: 90px;
+  color: white;
+
+ }
+
+.title_h2{
+  font-family: 'SFProDisplay';
+  color:white;
+  text-align: center;
+  margin-top: -30px;
+  font-size: 30px;
+  
+
+ }
+ 
+ .button__title{
+  position: absolute;
+  top:300px;
+  right: 300px;
+  background-color:#fff;
+  padding:10px;
+  font-family: 'SFProDisplay';
+  font-size:25px;
+  text-decoration:none;
+  color:#333;
+  border-radius: 3px;
+ }
+
+.button__title:hover{
+background:rgba(254,255,181,0.8);
+}
+ /*треугольник для кнопки
+ он мне кажется лишним, решил убрать*/
+ /*.button__title:after {
+    content: ''; 
+    position: absolute; 
+    left: 165px; top:-3px; 
+    border: 27px solid transparent; 
+    border-left: 27px solid white; 
+  }*/
+
+.menu-header{
+ height: 50px;
+ width: 100vw;
+
+ }
+ 
+.menu__list{
+   list-style-type: none;
+ margin-right: 20px;
+ }
+
+.menu_item{
+
+    float:right;
+    margin-right: 20px;
+    font-size: 20px;
+    padding:0;
+    border-bottom:1px dotted white;
+ }
+
+.menu_link {
+    text-decoration: dotted;  
+ }
+
+ .menu_link:hover{
+  color:rgba(254,255,181,0.8);
+ }
+
+
+.avatar{
+   position: absolute;
+   top:200px;
+   left:30%;
+
+ }
+
+
+.about{
+   margin-top:200px;
+   font-family: 'SFProDisplay';
+   font-style: italic;
+   color: #333333;
+   font-size: 20px;
+   font-weight:bold;
+   text-align: center;
+   font-style: normal;
+   height: 600px;
+   width: 100vw;
+   background-color: #D8D8D8;
+   position: relative;
+
+ }
+
+.discette{
+  position:absolute;
+  top:350px;
+  left:800px;
+  overflow: hidden;
+}
+
+.about__skill{
+  width: 700px;
+  margin:0 auto;
+ }
+ .my__skill{
+  text-align: left;
+
+ }
+ 
+ .my__skill_li{
+  text-align: left;
+  font-size: 18px;
+ }
+
+body {
+  margin: 0;
+  background-color: #3d385a;
+}
+.section-portfolio  {
+  perspective: 1000px;
+}
+.container-portfolio {
+  width: 680px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: 0.5s;
+  transform: rotateX(35deg);
+  transform-style: preserve-3d;
+}
+.container-origin {
+  transform: rotate(0);
+}
+.img-card {
+  max-width: 100%;
+}
+.card {
+  width: 200px;
+  margin: 10px;
+  transition: 0.2s;
+}
+.card:hover {
+  cursor: pointer;
+  transform: translateZ(10px);
+}
+
+/*.slider{
+    width: 800px;
+    height:350px;
+    margin-left: 100px;
+    margin-top: 60px;
+    font-size: 36px;
+    font-family:'Acrom-Bold';
+ }
+
+.slider-main{
+    height: 300px;
+    width: 1080px;
+   
+}
+
+.slider-slide{
+    height: 300px;
+    width: 200px;
+    margin-left: 20px;
+    text-align: center;
+    font-family:'Acrom-ExtraBold';
+    font-size: 20px;
+}
+
+.img-slider{
+    height: 250px;
+    width: 250px;
+    background:no-repeat center cover;
+    border-bottom: 2px solid #488647;
+   
+}
+
+.slick-prev:before, .slick-next:before { 
+    color:red !important;}
+*/
+
+ .skill{
+  margin:0 auto;
+  padding: 0 auto;
+  height: 150px;
+  background-color: #D8D8D8;
+ }
+
+.skill__list{
+margin-top: 100px;
+
+}
+
+ .skill__item{
+position: relative;
+background-color: #D8D8D8;
+margin-top: 20px;
+border-radius: 5px;
+list-style: none;
+height: 40px;
+}
+
+.skill__value{
+position: absolute;
+background-color: #333333;
+display: inline-block;
+height: 100%;
+border-radius: 5px 0 0 5px;
+}
+.skill_ul{
+  text-align: left;
+}
+
+.skill__value-15{
+width: 15%
+}
+
+.skill__value-65{
+width: 65%
+}
+
+
+
+.skill__value-100{
+width: 100%
+}
+
+.skill__title{
+position: absolute;
+top: 9px;
+left: 20px;
+font-family: 'SF UI Display';
+font-size: 16px;
+font-weight: normal;
+font-style: normal;
+font-stretch: normal;
+line-height: normal;
+letter-spacing: normal;
+text-align: left;
+color: white;
+}
+
+.footer{
+   border-width: 0px;  
+   border-color: #1D7373;
+   border-style: solid;
+   background-color: #D8D8D8;
+   height: 80px;
+ }  
+
+.footer__contacts{
+   list-style-type: none;
+
+ }
+
+.footer__contacts__item{
+   display: inline;
+   padding: 10px;
+
+ }
+
+.contacts{
+   text-decoration:none; 
+   height: 45px;
+   width: 45px;
+ }
+
+ #toTop {
+    width:100px;
+    border:1px solid #ccc;
+    background:rgba(95,180,115,0.4);
+    text-align:center;
+    padding:5px;
+    position:fixed;
+    bottom:20px; 
+    right:20px;
+    cursor:pointer;
+    display:none;
+    color:#333;
+    font-family:'SF UI Display';
+    font-size:15px;
+}
