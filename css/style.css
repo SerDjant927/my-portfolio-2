@@ -110,7 +110,7 @@ background:rgba(254,255,181,0.8);
 .avatar{
    position: absolute;
    top:200px;
-   left:30%;
+   left:25%;
 
  }
 
@@ -142,6 +142,11 @@ background:rgba(254,255,181,0.8);
   width: 700px;
   margin:0 auto;
  }
+
+.about-p{
+
+}
+
  .my__skill{
   text-align: left;
 
@@ -156,9 +161,26 @@ body {
   margin: 0;
   background-color: #3d385a;
 }
+
+.portfolio-container-h{
+width: 100vw;
+height: 100px;
+}
+
 .section-portfolio  {
   perspective: 1000px;
+  width: 100vw;
+  height: 300px;
 }
+
+.portfolio-h{
+  float:left;
+  margin-left:50px;
+  margin-top: 50px;
+  font-size: 40px;
+  font-family: 'SFProDisplay';
+}
+
 .container-portfolio {
   width: 680px;
   margin: auto;
@@ -166,7 +188,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  /*height: 100vh;*/
   transition: 0.5s;
   transform: rotateX(35deg);
   transform-style: preserve-3d;
