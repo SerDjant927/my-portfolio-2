@@ -1,5 +1,8 @@
 .body{
    background:#383838;
+   margin:0;
+   padding: 0;
+   width: 100vw;
    font-family: 'SF UI Display';
    font-style: italic;
    color: #333333;
@@ -7,8 +10,8 @@
    font-weight:bold;
    text-align: center;
    font-style: normal;
-   background-color: #D8D8D8;
-   
+   background-color: #F9F9F9;
+
  }
 .header {
    border-width: 0px;
@@ -20,7 +23,7 @@
    font-style: normal;
    font-size: 20px;
    border-style: solid;
-   background-color: #D8D8D8;
+   background-color: #F9F9F9;
    position: relative;
    background: url('../img/background__header.jpg');
    background-repeat:repeat;
@@ -49,8 +52,7 @@
   margin-top: -30px;
   font-size: 30px;
   
-
- }
+}
  
  .button__title{
   position: absolute;
@@ -66,7 +68,7 @@
  }
 
 .button__title:hover{
-background:rgba(254,255,181,0.8);
+background:rgba(148,236,229,0.8);
 }
  /*треугольник для кнопки
  он мне кажется лишним, решил убрать*/
@@ -103,7 +105,8 @@ background:rgba(254,255,181,0.8);
  }
 
  .menu_link:hover{
-  color:rgba(254,255,181,0.8);
+  color:rgba(148,236,229,0.8);
+
  }
 
 
@@ -111,8 +114,7 @@ background:rgba(254,255,181,0.8);
    position: absolute;
    top:200px;
    left:25%;
-
- }
+}
 
 
 .about{
@@ -126,15 +128,15 @@ background:rgba(254,255,181,0.8);
    font-style: normal;
    height: 600px;
    width: 100vw;
-   background-color: #D8D8D8;
+   background-color: #F9F9F9;
    position: relative;
 
  }
 
 .discette{
   position:absolute;
-  top:350px;
-  left:800px;
+  top:250px;
+  left:50px;
   overflow: hidden;
 }
 
@@ -143,48 +145,102 @@ background:rgba(254,255,181,0.8);
   margin:0 auto;
  }
 
-.about-p{
+  .skill{
+  margin:0 auto;
+  padding: 0 auto;
+  height: 150px;
+  background-color:#F9F9F9;
+ }
+
+.skill__list{
+margin-top: 100px;
 
 }
 
- .my__skill{
-  text-align: left;
+ .skill__item{
+position: relative;
+background-color: #F9F9F9;
+margin-top: 20px;
+border-radius: 5px;
+list-style: none;
+height: 40px;
+}
 
- }
- 
- .my__skill_li{
+.skill__value{
+position: absolute;
+background-color: #333333;
+display: inline-block;
+height: 100%;
+border-radius: 5px 0 0 5px;
+}
+.skill_ul{
   text-align: left;
-  font-size: 18px;
- }
+}
 
+.skill__value-15{
+width: 15%
+}
+
+.skill__value-65{
+width: 65%
+}
+
+.skill__value-100{
+width: 100%
+}
+
+.skill__title{
+position: absolute;
+top: 9px;
+left: 20px;
+font-family: 'SF UI Display';
+font-size: 16px;
+font-weight: normal;
+font-style: normal;
+font-stretch: normal;
+line-height: normal;
+letter-spacing: normal;
+text-align: left;
+color: white;
+}
+
+
+/*ТЕСТ ТЕСТ ТЕСТ
 body {
   margin: 0;
   background-color: #3d385a;
-}
+}*/
 
 .portfolio-container-h{
 width: 100vw;
 height: 100px;
+text-align: center;
+
+}
+
+.portfolio-h{
+  margin-left:50px;
+  margin-top: 50px;
+  font-size: 40px;
+  font-family: 'SFProDisplay';
+  
 }
 
 .section-portfolio  {
   perspective: 1000px;
   width: 100vw;
   height: 300px;
+  margin-left: 25px;
 }
 
-.portfolio-h{
-  float:left;
-  margin-left:50px;
-  margin-top: 50px;
-  font-size: 40px;
-  font-family: 'SFProDisplay';
-}
 
 .container-portfolio {
-  width: 680px;
+  width: 880px;
   margin: auto;
   display: flex;
+  /*border-style: solid;
+  border-radius: 1px;
+  border-color: black;*/
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -207,6 +263,7 @@ height: 100px;
 .card:hover {
   cursor: pointer;
   transform: translateZ(10px);
+  color:rgba(0,231,179,0.7);
 }
 
 /*.slider{
@@ -245,104 +302,32 @@ height: 100px;
     color:red !important;}
 */
 
- .skill{
-  margin:0 auto;
-  padding: 0 auto;
-  height: 150px;
-  background-color: #D8D8D8;
- }
 
-.skill__list{
-margin-top: 100px;
-
-}
-
- .skill__item{
-position: relative;
-background-color: #D8D8D8;
-margin-top: 20px;
-border-radius: 5px;
-list-style: none;
-height: 40px;
-}
-
-.skill__value{
-position: absolute;
-background-color: #333333;
-display: inline-block;
-height: 100%;
-border-radius: 5px 0 0 5px;
-}
-.skill_ul{
-  text-align: left;
-}
-
-.skill__value-15{
-width: 15%
-}
-
-.skill__value-65{
-width: 65%
-}
-
-
-
-.skill__value-100{
-width: 100%
-}
-
-.skill__title{
-position: absolute;
-top: 9px;
-left: 20px;
-font-family: 'SF UI Display';
-font-size: 16px;
-font-weight: normal;
-font-style: normal;
-font-stretch: normal;
-line-height: normal;
-letter-spacing: normal;
-text-align: left;
-color: white;
-}
 
 .footer{
-   border-width: 0px;  
-   border-color: #1D7373;
-   border-style: solid;
-   background-color: #D8D8D8;
+   background-color:#F9F9F9;
    height: 80px;
+   width: 100vw;
  }  
 
 .footer__contacts{
    list-style-type: none;
-
+  text-align: center;
+  margin-left: -45px;
  }
 
 .footer__contacts__item{
    display: inline;
    padding: 10px;
 
- }
+}
+
+.footer__contacts__item:hover{
+  opacity: 0.8;
+}
 
 .contacts{
    text-decoration:none; 
    height: 45px;
    width: 45px;
  }
-
- #toTop {
-    width:100px;
-    border:1px solid #ccc;
-    background:rgba(95,180,115,0.4);
-    text-align:center;
-    padding:5px;
-    position:fixed;
-    bottom:20px; 
-    right:20px;
-    cursor:pointer;
-    display:none;
-    color:#333;
-    font-family:'SF UI Display';
-    font-size:15px;
-}
