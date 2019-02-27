@@ -10,15 +10,8 @@ $(document).ready(function(){
 
 
 
-//ниже чисто слик//
-
-$(document).ready(function(){
-  $('.slider-main').slick();
-});
-
 //анамация портфолио//
 $('.card').on('click', function() {
     $('.container-portfolio').toggleClass('container-origin');
 });
-
 

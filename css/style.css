@@ -1,3 +1,10 @@
+body{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+
+  }
+
 .body{
    background:#383838;
    margin:0;
@@ -10,7 +17,8 @@
    font-weight:bold;
    text-align: center;
    font-style: normal;
-   background-color: #F9F9F9;
+   background-color: #ECFFF0;
+
 
  }
 .header {
@@ -23,7 +31,7 @@
    font-style: normal;
    font-size: 20px;
    border-style: solid;
-   background-color: #F9F9F9;
+   background-color: #ECFFF0;
    position: relative;
    background: url('../img/background__header.jpg');
    background-repeat:repeat;
@@ -42,6 +50,7 @@
   text-align: center;
   font-size: 90px;
   color: white;
+
 
  }
 
@@ -65,20 +74,14 @@
   text-decoration:none;
   color:#333;
   border-radius: 3px;
+  transition: 1.2s;
  }
 
 .button__title:hover{
-background:rgba(148,236,229,0.8);
+  transition: 1.2s;
+background:rgba(0,231,179,1);
+
 }
- /*треугольник для кнопки
- он мне кажется лишним, решил убрать*/
- /*.button__title:after {
-    content: ''; 
-    position: absolute; 
-    left: 165px; top:-3px; 
-    border: 27px solid transparent; 
-    border-left: 27px solid white; 
-  }*/
 
 .menu-header{
  height: 50px;
@@ -102,18 +105,35 @@ background:rgba(148,236,229,0.8);
 
 .menu_link {
     text-decoration: dotted;  
+     transition: 0.4s;
  }
 
  .menu_link:hover{
-  color:rgba(148,236,229,0.8);
-
+  color:rgba(0,231,179,0.8);
+ transition: 0.4s;
+  font-size: 22px;
  }
 
 
 .avatar{
    position: absolute;
-   top:200px;
-   left:25%;
+   top:220px;
+   left:30%;
+   width: 310px;
+   height: 310px;
+   border-style:solid;
+   border-radius: 50%;
+   border:0px;
+   background-color: black;
+ 
+   overflow: hidden;
+   transition: 1s;
+ }
+
+.avatar:hover{
+  transition: 1s;
+  background:rgb(48, 48, 48);
+ 
 }
 
 
@@ -128,7 +148,7 @@ background:rgba(148,236,229,0.8);
    font-style: normal;
    height: 600px;
    width: 100vw;
-   background-color: #F9F9F9;
+   background-color: #ECFFF0;
    position: relative;
 
  }
@@ -140,8 +160,21 @@ background:rgba(148,236,229,0.8);
   overflow: hidden;
 }
 
+.top-btn-1{
+  position: absolute;
+  right:30px;
+  top:550px;
+  background-color: rgba(0,0,0,0.4);
+  height: 25px;
+  width: 25px;
+  color: white;
+  font-size: 30px;
+  transition: 0.8s;
+}
+
 .about__skill{
   width: 700px;
+  height: 150px;
   margin:0 auto;
  }
 
@@ -149,7 +182,7 @@ background:rgba(148,236,229,0.8);
   margin:0 auto;
   padding: 0 auto;
   height: 150px;
-  background-color:#F9F9F9;
+  background-color:#ECFFF0;
  }
 
 .skill__list{
@@ -159,7 +192,7 @@ margin-top: 100px;
 
  .skill__item{
 position: relative;
-background-color: #F9F9F9;
+background-color: #ECFFF0;
 margin-top: 20px;
 border-radius: 5px;
 list-style: none;
@@ -168,7 +201,8 @@ height: 40px;
 
 .skill__value{
 position: absolute;
-background-color: #333333;
+/*background-color: #333333;*/
+background: linear-gradient(to left, #9e9e9e, #000000);
 display: inline-block;
 height: 100%;
 border-radius: 5px 0 0 5px;
@@ -183,6 +217,10 @@ width: 15%
 
 .skill__value-65{
 width: 65%
+}
+
+.skill__value-55{
+  width: 55%;
 }
 
 .skill__value-100{
@@ -204,13 +242,6 @@ text-align: left;
 color: white;
 }
 
-
-/*ТЕСТ ТЕСТ ТЕСТ
-body {
-  margin: 0;
-  background-color: #3d385a;
-}*/
-
 .portfolio-container-h{
 width: 100vw;
 height: 100px;
@@ -220,7 +251,7 @@ text-align: center;
 
 .portfolio-h{
   margin-left:50px;
-  margin-top: 50px;
+  margin-top: 100px;
   font-size: 40px;
   font-family: 'SFProDisplay';
   
@@ -231,6 +262,8 @@ text-align: center;
   width: 100vw;
   height: 300px;
   margin-left: 25px;
+
+border-left:solid  w2px, color red;
 }
 
 
@@ -238,77 +271,68 @@ text-align: center;
   width: 880px;
   margin: auto;
   display: flex;
-  /*border-style: solid;
-  border-radius: 1px;
-  border-color: black;*/
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  /*height: 100vh;*/
   transition: 0.5s;
-  transform: rotateX(35deg);
+  transform: rotateX(25deg);
   transform-style: preserve-3d;
+
 }
 .container-origin {
   transform: rotate(0);
 }
-.img-card {
-  max-width: 100%;
-}
+
 .card {
   width: 200px;
+  height: 350px;
   margin: 10px;
   transition: 0.2s;
+  
 }
 .card:hover {
   cursor: pointer;
-  transform: translateZ(10px);
+  /*заменил данный эффект выползания на зум в классе .img-card:hover;
+  transform: translateZ(10px);*/
   color:rgba(0,231,179,0.7);
 }
 
-/*.slider{
-    width: 800px;
-    height:350px;
-    margin-left: 100px;
-    margin-top: 60px;
-    font-size: 36px;
-    font-family:'Acrom-Bold';
- }
-
-.slider-main{
-    height: 300px;
-    width: 1080px;
-   
+.img-card {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s
 }
 
-.slider-slide{
-    height: 300px;
-    width: 200px;
-    margin-left: 20px;
-    text-align: center;
-    font-family:'Acrom-ExtraBold';
-    font-size: 20px;
+.img-card:hover{
+transform: scale(2);
 }
 
-.img-slider{
-    height: 250px;
-    width: 250px;
-    background:no-repeat center cover;
-    border-bottom: 2px solid #488647;
-   
+
+.top-btn-2{
+  position: absolute;
+  right:55px;
+  top:400px;
+  background-color: rgba(0,0,0,0.4);
+  height: 25px;
+  width: 25px;
+  color: white;
+  font-family: 'SFProDisplay';
+  font-size: 30px;
+  transition: 0.8s;
 }
 
-.slick-prev:before, .slick-next:before { 
-    color:red !important;}
-*/
-
-
+.top-btn-1:hover, .top-btn-2:hover{
+background-color: rgba(0, 199, 109, 0.7);
+transition: 0.8s;
+}
 
 .footer{
-   background-color:#F9F9F9;
-   height: 80px;
+   background-color:#ECFFF0;
+   margin-top: 350px;
+   height: 60px;
    width: 100vw;
  }  
+
 
 .footer__contacts{
    list-style-type: none;
@@ -323,11 +347,19 @@ text-align: center;
 }
 
 .footer__contacts__item:hover{
-  opacity: 0.8;
+  transition: 0.6s;
+  opacity: 0.6;
 }
 
 .contacts{
    text-decoration:none; 
    height: 45px;
    width: 45px;
+   background:no-repeat center;
  }
+
+.vk-contact, .whatsapp-contact, .telegram-contact{
+  height: 45px;
+  width: 45px;
+  background:url('../img/whatsapp.png')no-repeat center cover;
+}
