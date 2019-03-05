@@ -16,7 +16,7 @@ body{
    font-weight:bold;
    text-align: center;
    font-style: normal;
-   background-color: #ECFFF0;
+   background-color: #ededed;
 
 
  }
@@ -30,7 +30,7 @@ body{
    font-style: normal;
    font-size: 20px;
    border-style: solid;
-   background-color: #ECFFF0;
+   background-color: #ededed;
    position: relative;
    background: url('../img/background__header.jpg');
    background-repeat:repeat;
@@ -78,7 +78,7 @@ body{
 
 .button__title:hover{
   transition: 1.2s;
-background:rgba(0,231,179,1);
+background:rgba(255, 244, 140,1);
 
 }
 
@@ -108,11 +108,9 @@ background:rgba(0,231,179,1);
  }
 
  .menu_link:hover{
-  color:rgba(0,231,179,0.8);
+  color:rgba(255, 244, 140, 0.8);
  transition: 0.4s;
-  font-size: 22px;
  }
-
 
 .avatar{
    position: absolute;
@@ -147,7 +145,7 @@ background:rgba(0,231,179,1);
    font-style: normal;
    height: 600px;
    width: 100vw;
-   background-color: #ECFFF0;
+   background-color: #ededed;
    position: relative;
 
  }
@@ -165,11 +163,9 @@ background:rgba(0,231,179,1);
   top:550px;
   background-color: rgba(0,0,0,0.5);
   height: 25px;
-  width: 30px;
-  border-style: solid;
-  border-radius: 0px 50%;
-  color: white;
-  font-size: 15px;
+  width: 25px;
+  font-family:'SFProDisplay';
+  font-size: 20px;
   transition: 0.8s;
 }
 
@@ -206,7 +202,7 @@ transition: 0.5s;
   margin:0 auto;
   padding: 0 auto;
   height: 250px;
-  background-color:#ECFFF0;
+  background-color:#ededed;
  }
 
 .skill__list{
@@ -223,7 +219,7 @@ font-size: 25px;
 
  .skill__item{
 position: relative;
-background-color: #ECFFF0;
+background-color: #ededed;
 margin-top: 20px;
 border-radius: 5px;
 list-style: none;
@@ -325,7 +321,7 @@ border-left:solid  2px, color red;
   cursor: pointer;
   /*заменил данный эффект выползания на зум в классе .img-card:hover;
   transform: translateZ(10px);*/
-  color:rgba(0,231,179,0.7);
+  color:rgba(186, 184, 61, 0.9);
 }
 
 .img-card {
@@ -387,7 +383,7 @@ height: 500px;
 
 
 .footer{
-   background-color:#ECFFF0;
+   background-color:#ededed;
    margin-top: 350px;
    height: 60px;
    width: 100vw;
