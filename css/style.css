@@ -6,7 +6,6 @@ body{
   }
 
 .body{
-   background:#383838;
    margin:0;
    padding: 0;
    width: 100vw;
@@ -162,31 +161,63 @@ background:rgba(0,231,179,1);
 
 .top-btn-1{
   position: absolute;
-  right:30px;
+  right:50px;
   top:550px;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0,0,0,0.5);
   height: 25px;
-  width: 25px;
+  width: 30px;
+  border-style: solid;
+  border-radius: 0px 50%;
   color: white;
-  font-size: 30px;
+  font-size: 15px;
   transition: 0.8s;
 }
 
 .about__skill{
-  width: 700px;
+  width: 90vw;
   height: 150px;
   margin:0 auto;
- }
+/*background: linear-gradient(to right, #ECFFF0, #91e0ff);*/
+border-left-style: solid;
+border-left-color: black;
+border-right-style: solid;
+border-right-color: black;
+border-width: 2px; 
+}
+.about-p, .about-link{
+  font-family: 'SFProDisplay';
+  font-size: 20px;
+  color:black;
+}
+
+.about-link{
+color:#8AA9D6;
+text-decoration: dotted;
+transition: 0.5s;
+}
+
+.about-link:hover{
+  color:#3f1bab;
+  transition: 0.5s;
+}
+
 
   .skill{
   margin:0 auto;
   padding: 0 auto;
-  height: 150px;
+  height: 250px;
   background-color:#ECFFF0;
  }
 
 .skill__list{
 margin-top: 100px;
+
+}
+.skill__list-p{
+float: left;
+margin-left: 40px;
+font-size: 25px;
+  font-family: 'SFProDisplay';
 
 }
 
@@ -212,11 +243,11 @@ border-radius: 5px 0 0 5px;
 }
 
 .skill__value-15{
-width: 15%
+width: 25%
 }
 
 .skill__value-65{
-width: 65%
+width: 75%
 }
 
 .skill__value-55{
@@ -224,7 +255,7 @@ width: 65%
 }
 
 .skill__value-100{
-width: 100%
+width: 95%
 }
 
 .skill__title{
@@ -251,19 +282,19 @@ text-align: center;
 
 .portfolio-h{
   margin-left:50px;
-  margin-top: 100px;
+  margin-top: 250px;
   font-size: 40px;
   font-family: 'SFProDisplay';
   
 }
 
-.section-portfolio  {
+.section-portfolio{
   perspective: 1000px;
   width: 100vw;
   height: 300px;
-  margin-left: 25px;
+ 
 
-border-left:solid  w2px, color red;
+border-left:solid  2px, color red;
 }
 
 
@@ -321,17 +352,61 @@ transform: scale(2);
   transition: 0.8s;
 }
 
-.top-btn-1:hover, .top-btn-2:hover{
+.top-btn-1:hover, .top-btn-2:hover, .top-btn-3:hover{
 background-color: rgba(0, 199, 109, 0.7);
 transition: 0.8s;
 }
+
+.map-span-wrap{
+  height: 70px;
+  width: 100vw;
+ 
+  text-align: center;
+  margin-top: 300px;
+}
+
+.map-span{
+  color: black;
+  font-family: 'SFProDisplay';
+  font-size: 30px;
+
+}
+.map-location-wrap{
+width:10vw;
+height: 650px;
+text-align: center;
+margin-left: 30px;
+margin-top: -50px;
+}
+
+.map-location{
+padding-top: 50px;
+width: 95vw;
+height: 500px;
+}
+
 
 .footer{
    background-color:#ECFFF0;
    margin-top: 350px;
    height: 60px;
    width: 100vw;
+   position: relative;
  }  
+
+
+.top-btn-3{
+  position: absolute;
+  right:50px;
+ bottom: 70px;
+  background-color: rgba(0,0,0,0.4);
+  height: 25px;
+  width: 25px;
+  color: white;
+   font-family: 'SFProDisplay';
+  font-size: 30px;
+  transition: 0.8s;
+}
 
 
 .footer__contacts{
@@ -362,4 +437,7 @@ transition: 0.8s;
   height: 45px;
   width: 45px;
   background:url('../img/whatsapp.png')no-repeat center cover;
+}
+a{
+  text-decoration: none;
 }

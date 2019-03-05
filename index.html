@@ -12,15 +12,19 @@
     
 
         
- <div class="header">
+ <div class="header" data-block="header">
    <div class="menu-header">
        <ul class="menu__list">
+        <li class="menu_item">   
+         <a href="#"class="menu_link" data-link="map">Как найти?</a></li>
          <li class="menu_item">     
          <a href="#" class="menu_link" data-link="footer">Связь</a></li>
+         
          <li class="menu_item">   
          <a href="#"class="menu_link" data-link="portfolio">Портфолио</a></li>
          <li class="menu_item">   
-         <a href="#"class="menu_link" data-link="about">Обо мне</a></li></ul></div>
+         <a href="#"class="menu_link" data-link="about">Обо мне</a></li>
+       </ul></div>
 
          <!--button class="button__title">Написать мне</button-->
          <a class="button__title" href="mailto:sergey.poroshin927@gmail.com">Написать мне</a>
@@ -29,7 +33,7 @@
                <h2 class="title_h2">Front-end developer</h2>
                <div class="avatar">
                   
-        <a href="index.html"class="logo"><img width="380" height="320" src="img/avatar-2.png" alt="аватар"> </a> 
+        <a href="index.html"class="logo"><img width="380" height="320" src="img/avatar.png" alt="аватар"> </a> 
              </div>
    </div>
  </div>
@@ -38,15 +42,15 @@
 
  <div class="about" data-block="about">
   <div class="discette"><img src="img/diskette.png" alt="дискета"></div>
-  <div class="top-btn-1"><a href="#">^</a></div>
+  <div class="top-btn-1 topbtn" data-link="header"><a href="#">/\</a></div>
       <div class="about__skill">
-       <p>Привет всем, меня зовут Сергей и я начинающий web-разработчик.</p>
-       <p>Мне очень нравится заниматься тем, чем я занимаюсь.</p>
-       <p>Выполняю работу качественно и вдумчиво, но при этом быстро.</p>
+       <p class="about-p">Приветствую, меня зовут Сергей и я Junior web-разработчик.</p>
+       <p class="about-p">Если нужен сайт - я готов помочь Вам с этим.</p>
+       <p class="about-p">Делаю работу качественно и в срок. Моё портфолио можете увидеть<a href="#" class="about-link" data-link="portfolio"> ниже</a>.</p>
         
       </div>
  </div>
-
+ <p class="skill__list-p">Подробнее о моих навыках:</p>
 <div class="skill">
   <div class="skill__list">
      <ul class="skill_ul">
@@ -55,7 +59,7 @@
      <span class="skill__title">JavaScript</span>
      </li><li class="skill__item">
      <span class="skill__value skill__value-65"></span>
-     <span class="skill__title">CSS</span>
+     <span class="skill__title">CSS\CSS3</span>
      </li>
 
      <li class="skill__item">
@@ -66,7 +70,7 @@
 
      <li class="skill__item">
      <span class="skill__value skill__value-100"></span>
-     <span class="skill__title">HTML</span>
+     <span class="skill__title">HTML\HTML5</span>
      </li>
      </ul>
    </div>
@@ -82,10 +86,17 @@
     <div class="card"><img class="img-card" src="pics/ficus.jpg" alt=""><p>Пример портфолио</p></div>
   
 </div>
-<div class="top-btn-2"><a href="#">^</a></div>
+
+<div class="top-btn-2 topbtn" data-link="header"><a href="#">^</a></div>
  </div>
 
   
+<!--надо поработать над гугл картами, центрируется хрен пойми где--><div data-block="map" class="map-span-wrap"><p class="map-span">Где меня найти:</p></div>
+<div class="map-location-wrap">
+<div class="map-location"><iframe src="https://www.google.com/maps/d/embed?mid=13Y1jG8ycD7BCv-R16sJTTI4tiHQk29Ln" width="860" height="520"></iframe></div>
+</div>
+
+
 <div class="footer" data-block="footer">
   
    <ul class="footer__contacts">
@@ -95,6 +106,7 @@
      <a href="whatsapp://send?phone=+79833946243"class="contacts"><img class="whatsapp-contact" src="img/whatsapp.png" alt="FaceBook"></a></li>
      <li class="footer__contacts__item">   
      <a href="https://t.me/SergeyP9272"class="contacts"><img class="telegram-contact" src="img/telegram.png" alt="Instagram"></a></li></ul>
+  <div class="top-btn-3 topbtn"data-link="header"><a href="#">^</a></div>
     </div>
 
  
