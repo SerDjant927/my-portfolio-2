@@ -41,6 +41,7 @@ body{
   margin: 0 auto;
   position: relative;
   width:800px;
+  height: 180px;
   
 
  }
@@ -127,16 +128,18 @@ background:rgba(255, 244, 140,1);
  .img-logo{
   width: 380px;
   height: 320px;
+ 
  }
 
 .avatar:hover{
   transition: 1s;
   background:rgb(48, 48, 48);
+ 
  }
 
 
 .about{
-   margin-top:200px;
+   margin-top:250px;
    font-family: 'SFProDisplay';
    font-style: italic;
    color: #333333;
@@ -144,7 +147,7 @@ background:rgba(255, 244, 140,1);
    font-weight:bold;
    text-align: center;
    font-style: normal;
-   height: 600px;
+   height: 900px;
    width: 100vw;
    background-color: #ededed;
    position: relative;
@@ -153,20 +156,20 @@ background:rgba(255, 244, 140,1);
 
 .discette{
   position:absolute;
-  top:250px;
+  top:300px;
   left:50px;
   overflow: hidden;
 }
 
 .top-btn-1{
   position: absolute;
-  right:50px;
+  right:55px;
   top:550px;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.4);
   height: 25px;
   width: 25px;
-  font-family:'SFProDisplay';
-  font-size: 20px;
+  font-family: 'SFProDisplay';
+  font-size: 30px;
   transition: 0.8s;
 }
 
@@ -354,35 +357,6 @@ background-color: rgba(0, 199, 109, 0.7);
 transition: 0.8s;
 }
 
-/*.map-span-wrap{
-  height: 70px;
-  width: 100vw;
- 
-  text-align: center;
-  margin-top: 300px;
-}
-
-.map-span{
-  color: black;
-  font-family: 'SFProDisplay';
-  font-size: 30px;
-
-}
-.map-location-wrap{
-width:10vw;
-height: 650px;
-text-align: center;
-margin-left: 30px;
-margin-top: -50px;
-}
-
-.map-location{
-padding-top: 50px;
-width: 95vw;
-height: 500px;
-}*/
-
-
 .footer{
    background-color:#ededed;
    margin-top: 350px;
@@ -394,7 +368,7 @@ height: 500px;
 
 .top-btn-3{
   position: absolute;
-  right:50px;
+  right:55px;
  bottom: 70px;
   background-color: rgba(0,0,0,0.4);
   height: 25px;
@@ -448,6 +422,7 @@ width: 660px;
 .card{
   width:120px; 
   height:220px;
+  font-size: 12px;
 }
 }
 
@@ -458,16 +433,16 @@ font-size: 16px;
 margin-right: 10px;
 }
 
-  .avatar{
-    height: 210px;
-    width: 210px;
-    /*display: none;*/
-    top:110px;
-    left: 290px;
-    background:rgb(48, 48, 48);
+.avatar{
+  height: 210px;
+  width: 210px;
+  top:110px;
+  left: 290px;
+  background:rgb(48, 48, 48);
   }
-  .avatar:hover{
-    background: white;
+
+.avatar:hover{
+  background: white;
   }
 
 .img-logo{
@@ -489,4 +464,57 @@ margin-right: 10px;
     top:330px;
     left:310px;
   }
+}
+
+@media(max-width: 650px){
+  .title{
+   margin: 0 auto;
+  position: relative;
+  width:450px;
+  height: 80px;
+}
+.title_h1{
+  font-size: 50px;
+  transition: 0.5s;
+}
+.title_h2{
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.avatar{
+  height: 180px;
+  width: 180px;
+  top:110px;
+  left: 130px;
+  background:rgb(48, 48, 48);
+  }
+
+.avatar:hover{
+  background: white;
+  }
+
+.img-logo{
+  height: 180px;
+  width: 230px;
+}
+
+ .button__title{
+    position: absolute;
+    top:300px;
+    left:150px;
+    font-size: 18px;
+  }
+
+  .portfolio-h{
+    font-size: 20px;
+  }
+  .container-portfolio{
+width: 500px;
+}
+.card{
+  width:80px; 
+  height:170px;
+  font-size: 12px;
+}
 }
